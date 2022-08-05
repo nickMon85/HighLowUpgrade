@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./styles.css" />
+        <title>Number guess game!</title>
+        
+        <style>
+            html{
+                font-family: sans-serif;
+            }
+            body{
+                width: 50%;
+                max-width: 800px;
+                min-width: 480px;
+                margin:0 auto;
+                background-color: antiquewhite;
+            }
+            #container{
+                max-width: 400px;
+                position: center;
+            }
+            .lastResult{
+                color:white;
+                padding: 3px;
+            }
+            h1{
+                color:deepskyblue;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        
+        <div class="sun"></div>
+    
+    
+        <container id="container">
+            <h1>Number guess game!</h1>
+            <p id="message"></p>
+            <p> We select a number in that range at random. Can you guess the number with 5 chances. We will let you know
+                whether you're guesses are too high or low!</p>
+            <div class="form">
+                <label for="guessField">Enter Your guess</label><input type="text" id="guessField" class="guessField">
+                <input type="submit" value="Submit guess" class="guessSubmit" />
+            </div>
+            <div class="resultParas">
+                <p class="guesses"></p>
+                <p class="lastResult"></p>
+                <p class="lowOrHi"></p>
+    
+            </div>
+            <script src="highlow.js"></script>
+        </container>
+    
+    
+    
+    </body>
+</html>
